@@ -10,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 <style>
     h1 {color: purple; text-decoration: underline;font-family: 'Bebas Neue', cursive;}
 
-    h2 {font-family: 'Secular One', sans-serif; 
-    }
+    h2 {font-family: 'Secular One', sans-serif;}
 
-    p {font-family: 'Manrope', sans-serif;
-    }
+    p {font-family: 'Manrope', sans-serif;}
 
     .linea-izquierda{
  border-left: thick solid purple;
@@ -50,7 +51,60 @@
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  ">
     <img src="images/arg programa.png"  height="60">
     <div class="col-md-3 text-end">
-      <button style="background:purple" type="button" class="btn btn-primary me-2">Login</button>
+      <a href="#ventanaLogin" role="button" class="btn btn-primary me-2" style="background:purple" data-toggle="modal">
+        Login
+        </a>
+        
+        <div id="ventanaLogin" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h1 class="modal-title">Accede a tu cuenta</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form2Example1" class="form-control" />
+                              <label class="form-label" for="form2Example1">Usuario</label>
+                            </div>
+                          
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form2Example2" class="form-control" />
+                              <label class="form-label" for="form2Example2">Contraseña</label>
+                            </div>
+                          
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                              <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                  <label class="form-check-label" for="form2Example31"> Recuérdame </label>
+                                </div>
+                              </div>
+                          
+                              <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Olvidó la contraseña?</a>
+                              </div>
+                            </div>
+                          
+                            <!-- Submit button -->
+                            <button type="button" class="btn btn-primary btn-block mb-4" style="background:purple">
+                                LOGIN</button>
+                          
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
   </header>
 
