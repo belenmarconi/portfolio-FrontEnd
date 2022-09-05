@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PORTFOLIO Belen Marconi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 <style>
-    h1 {color: purple; text-decoration: underline}
+    h1 {color: purple; text-decoration: underline;font-family: 'Bebas Neue', cursive;}
+
+    h2 {font-family: 'Secular One', sans-serif;}
+
+    p {font-family: 'Manrope', sans-serif;}
 
     .linea-izquierda{
  border-left: thick solid purple;
@@ -15,17 +27,23 @@
  position: relative;
  }
 
- .linea-abajo {
+     .linea-abajo {
   border-bottom: thick solid purple;
-  width: 100%;
+  width: 50%;
   position: relative;
 }
 
-.linea-derecha{
+    .linea-derecha{
  border-right: thick solid purple;
  height:100%;
  position: relative;
  }
+
+    .linea-perfil {
+  border-bottom: thick solid purple;
+  width: 100%;
+  position: relative;
+}
 </style>
 
 
@@ -33,7 +51,60 @@
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  ">
     <img src="images/arg programa.png"  height="60">
     <div class="col-md-3 text-end">
-      <button style="background:purple" type="button" class="btn btn-primary me-2">Login</button>
+      <a href="#ventanaLogin" role="button" class="btn btn-primary me-2" style="background:purple" data-toggle="modal">
+        Login
+        </a>
+        
+        <div id="ventanaLogin" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h1 class="modal-title">Accede a tu cuenta</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form2Example1" class="form-control" />
+                              <label class="form-label" for="form2Example1">Usuario</label>
+                            </div>
+                          
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form2Example2" class="form-control" />
+                              <label class="form-label" for="form2Example2">Contraseña</label>
+                            </div>
+                          
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                              <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                  <label class="form-check-label" for="form2Example31"> Recuérdame </label>
+                                </div>
+                              </div>
+                          
+                              <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Olvidó la contraseña?</a>
+                              </div>
+                            </div>
+                          
+                            <!-- Submit button -->
+                            <button type="button" class="btn btn-primary btn-block mb-4" style="background:purple">
+                                LOGIN</button>
+                          
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
   </header>
 
@@ -44,27 +115,27 @@
 <div class="container" width="100%">
   <div class="row">
     
-     <div class="col-7">
+     <div class="col-6">
           <div style="padding-top: 10%;"><h1>ACERCA DE MI</h1>
           </div>
 
           <div style="padding-left: 15%;">
-            <p > 
-            <div>Este texto de parrafo sobre mi</div>  
-            <div>sigue el texto sobre mi pruebas</div>
-            <div>jwojfiowjfoiwjefoiwjefoijeoifj</div>
-            <div>ijoijfiojwofijweiofjioejfjdpkpkpo</div>
-            </p>
+            
+            <p>Este texto de parrafo sobre mi</p>  
+            <p>sigue el texto sobre mi pruebas</p>
+            <p>jwojfiowjfoiwjefoiwjefoijeoifj</p>
+            <p>ijoijfiojwofijweiofjioejfjdpkpkpo</p>
+            
           </div>
      </div>
 
-      <div class="col-5">
+      <div class="col-6">
             <div style="transform: translateY(-70px); opacity: 1; text-align: right; ">
               <img  width="50%" src="images/perfil.png" alt="">
             </div>
             
             <div style="margin-inline-end: 25%;transform: translateY(-70px);">
-                <div class="linea-derecha linea-abajo" style="text-align: right;">
+                <div class="linea-derecha linea-perfil" style="text-align: right;">
                         <div style="padding-top:10%; margin-inline-end: 5% ; margin-bottom: 10%; ">
                         <span> <a title="#" href="http://instagram.com/beelmarconi"><img width="10%" src="images/instagram.png" alt="Instagram" /></a></span> 
                         <span> <a title="#" href="#"><img width="10%" src="images/linkedin.png" alt="Linkedin" /></a></span>
@@ -78,6 +149,85 @@
 </div>
 
 
+
+
+<div class="container" width="100%">
+    <div class="row">
+        <div class="col-7 linea-abajo linea-izquierda">
+              <div><h1>EXPERIENCIA LABORAL</h1>
+              </div>
+
+              <div style="padding-left: 15%;">
+                <h2 >Experiencia laboral 1</h2>  
+                <p>Detalle experiencia laboral 1</p>
+                <h2 >Experiencia laboral 2</h2>  
+                <p>Detalle experiencia laboral 2</p>
+                <h2 >Experiencia laboral 3</h2>  
+                <p>Detalle experiencia laboral 3</p>
+                
+              </div>
+         </div>
+    </div>
+</div>
+
+
+
+<div class="container" width="100%" style="margin-top:5% ;">
+  <div class="row">
+          <div class="col-5"> </div>
+          <div class="col-7 linea-abajo linea-derecha">
+            <div style="text-align: right;"><h1>EDUCACION</h1>
+            </div>
+
+            <div style="padding-left: 15%;">
+              <p > 
+                <h2 >Historial academico 1</h2>  
+                <p>Detalle historial acadmeico 1</p>
+                <h2 >Historial academico 2</h2>  
+                <p>Detalle historial acadmeico 2</p>
+                <h2 >Historial academico 3</h2>  
+                <p>Detalle historial acadmeico 3</p>
+                <h2 >Historial academico 4</h2>  
+                <p>Detalle historial acadmeico 4</p>
+              </p>
+            </div>
+       </div>
+  </div>
+</div>
+
+
+
+<div class="container" width="100%" style="margin-top:5% ;">
+  <div class="row">
+      <div class="col-7 linea-abajo linea-izquierda">
+            <div><h1>SKILLS</h1>
+            </div>
+
+            <div style="padding-left: 15%;">
+              <div class="progress" style="margin-bottom: 2%; height:30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="80" aria-valuemax="100"></div>
+                <p>FRONTEND</p>
+              </div>
+              <div class="progress" style="margin-bottom: 2%; height:30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <p>BACKEND</p>
+              </div>
+              <div class="progress" style="margin-bottom: 2%; height:30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <p> PROACTIVIDAD </p>
+              </div>
+              <div class="progress" style="margin-bottom: 2%; height:30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <p>INGLES</p>
+              </div>
+              <div class="progress" style="margin-bottom: 2%; height:30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <p>TRABAJO EN EQUIPO</p>
+              </div>
+            </div>
+       </div>
+  </div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
